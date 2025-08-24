@@ -1,8 +1,8 @@
-package trabajos.practicos.p2;
+package trabajos.practicos.p2.unidad2;
 
 import java.util.Scanner;
 
-public class TP2 {
+public class MainU2 {
     
     
     
