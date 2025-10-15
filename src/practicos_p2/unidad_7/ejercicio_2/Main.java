@@ -7,20 +7,18 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Figura> figuras = new ArrayList<>();
         
-        Rectangulo r1 = new Rectangulo(4.0,  4.0, "Rectangulo 1");
-        Rectangulo r2 = new Rectangulo(6.0,  4.0, "Rectangulo 2");
-        Circulo c1 = new Circulo(10, "Circulo 1");
-        Circulo c2 = new Circulo(15, "Circulo 2");
+        Rectangulo r1 = new Rectangulo(4.0, 4.0, "Rectángulo 1");
+        Rectangulo r2 = new Rectangulo(6.0, 4.0, "Rectángulo 2");
+        Circulo c1 = new Circulo(10, "Círculo 1");
+        Circulo c2 = new Circulo(15, "Círculo 2");
         
         figuras.add(r1);
         figuras.add(r2);
         figuras.add(c1);
         figuras.add(c2);
         
-        for(Figura f : figuras){
-            f.calcularArea();
+        for (Figura f : figuras) {
+            System.out.println("El área de " + f.nombre + " es igual a: " + f.calcularArea());
         }
-        
     }
-    
 }

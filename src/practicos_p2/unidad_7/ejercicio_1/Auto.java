@@ -10,7 +10,10 @@ public class Auto extends Vehiculo {
 
     @Override
     public void mostrarInfo(){
-        System.out.println("Modelo: " + this.modelo + " ,marca: " + this.marca + ", cant. de puertas: " + cantidadDePuertas);
+        // Llamamos al método del padre para mostrar marca y modelo
+        super.mostrarInfo();
+        // Luego agregamos la información específica del Auto
+        System.out.println("Cantidad de puertas: " + cantidadDePuertas);
     }
-    
 }
+

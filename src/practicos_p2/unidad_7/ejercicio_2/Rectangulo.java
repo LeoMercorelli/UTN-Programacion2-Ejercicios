@@ -1,6 +1,6 @@
 package practicos_p2.unidad_7.ejercicio_2;
 
-public class Rectangulo extends Figura{
+public class Rectangulo extends Figura {
     private double base;
     private double altura;
 
@@ -11,7 +11,7 @@ public class Rectangulo extends Figura{
     }
     
     @Override
-    public void calcularArea(){
-        System.out.println("El area del rectangulo " + nombre + " es igual a: " +  (base * altura));
+    public double calcularArea() {
+        return base * altura;
     }
 }

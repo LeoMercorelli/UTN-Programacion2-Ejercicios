@@ -7,21 +7,21 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Empleado> empleados = new ArrayList<>();
         
-        EmpleadoPlanta e1 = new EmpleadoPlanta();
-        EmpleadoPlanta e2 = new EmpleadoPlanta();
-        EmpleadoTemporal e3 = new EmpleadoTemporal();
-        EmpleadoTemporal e4 = new EmpleadoTemporal();
+        // Creamos empleados de planta y temporales con distintos valores
+        Empleado e1 = new EmpleadoPlanta("Juan", 900000);
+        Empleado e2 = new EmpleadoPlanta("María", 950000);
+        Empleado e3 = new EmpleadoTemporal("Pedro", 160, 5300);
+        Empleado e4 = new EmpleadoTemporal("Lucía", 120, 5200);
         
         empleados.add(e1);
         empleados.add(e2);
         empleados.add(e3);
         empleados.add(e4);
         
-        int i = 0;
-        for(Empleado e : empleados) {
-            System.out.println("El empleado " + i + " cobra: " + e.calcularSueldo(e));
+        int i = 1;
+        for (Empleado e : empleados) {
+            System.out.println("Empleado " + i + " (" + e.nombre + ") cobra: " + e.calcularSueldo());
             i++; 
         }
     }
-    
 }
